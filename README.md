@@ -8,6 +8,7 @@ The project teaches both sides of Active Directory security: how a small busines
 
 ## Table of Contents
 
+- [Prerequisites](#prerequisites)
 - [Architecture](#architecture)
 - [Learning Objectives](#learning-objectives)
 - [What the Project Covers](#what-the-project-covers)
@@ -21,6 +22,40 @@ The project teaches both sides of Active Directory security: how a small busines
 - [Future Expansion](#future-expansion)
 - [License](#license)
 - [Disclaimer](#disclaimer)
+
+## Prerequisites
+
+This project was built and validated using the following software:
+
+### Virtualization
+
+- VMware Workstation Pro
+- Sufficient host resources to run Kali Linux and three Windows VMs simultaneously
+
+### Installation Media
+
+- Windows Server 2022 ISO
+- Windows 11 Pro 25H2 ISO
+- Kali Linux VMware image
+
+The walkthroughs and screenshots in this project assume **Windows Server 2022** for DC01 and SRV01 and **Windows 11 Pro 25H2** for WS01.
+
+Other supported Windows Server and Windows 11 releases may also work, but configuration steps, Group Policy behavior, security defaults, firewall rules, and tool output may differ. If you want to reproduce the lab as documented, use the versions listed above.
+
+### Recommended Host Resources
+
+A host with at least the following is recommended:
+
+- 16 GB RAM minimum; 32 GB preferred
+- 4+ CPU cores
+- Approximately 150-200 GB of available storage
+- Hardware virtualization enabled in BIOS/UEFI
+
+Resource allocation can be adjusted based on available hardware.
+
+### Downloads
+
+Have the required installation media downloaded before beginning the build. ISO files and virtual-machine disks should **not** be committed to this repository.
 
 ## Architecture
 
