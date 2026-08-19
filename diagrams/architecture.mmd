@@ -1,0 +1,14 @@
+flowchart TB
+    Internet((Internet))
+    NAT[VMware NAT]
+    Kali[Kali Linux<br/>eth0: NAT<br/>eth1: 10.10.10.50]
+    VMnet2[VMnet2 Host-Only<br/>10.10.10.0/24]
+    DC01[DC01<br/>Windows Server 2022<br/>10.10.10.10<br/>AD DS / DNS]
+    SRV01[SRV01<br/>Windows Server 2022<br/>10.10.10.20<br/>Member Server]
+    WS01[WS01<br/>Windows 11 Pro<br/>10.10.10.21<br/>Domain Workstation]
+
+    Internet --> NAT --> Kali
+    Kali --> VMnet2
+    VMnet2 --> DC01
+    VMnet2 --> SRV01
+    VMnet2 --> WS01
